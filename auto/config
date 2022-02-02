@@ -3,4 +3,7 @@
 set -e
 
 lb config noauto \
+	--binary-images iso-hybrid \
+	--cache true \
+	"boot=live components hostname=debianjr username=debianjr" \
 	"${@}"
