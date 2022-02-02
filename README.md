@@ -22,11 +22,14 @@ Build your own Debian Jr. Live System:
  * lb config
  * sudo lb build
 
+Run ISO with qemu:
+
+ * kvm -m 2G -cdrom live-image-amd64.hybrid.iso
+
 ## Contact
 
 Development and support:
 
  * Mailing list: The primary contact for the project is the mailing list at https://lists.debian.org/debian-jr/
  * XMPP/Jabber chat: xmpp:debian-jr@conference.debian.org?join
-
 
