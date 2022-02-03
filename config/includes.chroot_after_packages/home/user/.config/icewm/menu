@@ -2,30 +2,28 @@
 
 prog "Debian Jr. Info" ! zenity --info --text "Debian Jr."
 prog "Debian Jr." ! xdg-open ~/README.txt
-#prog "Web Browser" ! x-www-browser
-#prog HexChat hexchat hexchat
-#prog Gimp gimp gimp
-# 
+prog "Web Browser" ! x-www-browser
+prog "Chat" im.dino.Dino dino-im
+
 separator
-#menu Applications folder {
-#    menu Editors folder {
-#        prog fte fte fte
-#        prog vim vim gvim
-#        prog xemacs xemacs xemacs
-#        prog NEdit nedit nedit
-#        prog xedit xedit xedit
-#        prog Lyx emacs lyx
-#    }
-#    menu "Mail Agents" folder {
-#        prog Mutt mutt x-terminal-emulator -e mutt
-#    }
-#    menu "WWW Browsers" folder {
-#        prog "Web Browser" ! x-www-browser
-#        prog Konqueror konqueror konqueror
-#        prog Chromium chromium chromium
-#        prog w3m lynx x-terminal-emulator -e w3m
-#        prog Links2 lynx x-terminal-emulator -e links2
-#    }
+menu Applications folder {
+    menu Editors folder {
+        prog "Mousepad" org.xfce.mousepad mousepad
+    }
+    menu "Mail Agents" folder {
+	prog claws-mail claws-mail claws-mail
+    }
+    menu "WWW Browsers" folder {
+        prog "Web Browser" ! x-www-browser
+    }
+    menu "Player" folder {
+        prog "Parole-Medienspieler" org.xfce.parole parole
+        prog "VLC Media Player" vlc icewm-menu-fdo "/usr/share/applications/vlc.desktop"
+    }
+    menu "Kids" folder {
+        prog "GCompris" gcompris-qt gcompris-qt
+    }
+
 #    menu Graphics folder {
 #        prog Gimp gimp gimp
 #        prog Geeqie geeqie geeqie
@@ -67,7 +65,7 @@ separator
 #        restart fvwm2 - fvwm2
 #        restart fvwm - fvwm
 #    }
-#}
+}
 #menu Utilities folder {
 #    menu Multimedia folder {
 #        prog XPlayCD xplaycd xplaycd
