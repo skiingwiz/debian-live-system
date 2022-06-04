@@ -12,7 +12,7 @@ Homepage: https://salsa.debian.org/debian-jr-team/debian-junior-live-system
 Package: debian-junior-live
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}
 Suggests: live-build
 Description: Debian Junior live system image
  This package contains the files for live-build to
