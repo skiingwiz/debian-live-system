@@ -1,4 +1,4 @@
-Source: debian-junior-live
+Source: debian-junior-live-system
 Section: misc
 Priority: optional
 Maintainer: Debian Junior <debian-jr@lists.debian.org>
@@ -9,7 +9,7 @@ Vcs-Browser: https://salsa.debian.org/debian-jr-team/debian-junior-live-system
 Vcs-Git: https://salsa.debian.org/debian-jr-team/debian-junior-live-system.git
 Homepage: https://salsa.debian.org/debian-jr-team/debian-junior-live-system
 
-Package: debian-junior-live
+Package: debian-junior-live-system
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}
