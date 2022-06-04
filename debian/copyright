@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: debian-junior-live
+Upstream-Contact: Debian Junior <debian-jr@lists.debian.org>  
+Source: https://wiki.debian.org/DebianJr
+
+Files: * 
+Copyright: 2022 Stefan Kropp <stefan.kropp@posteo.de>  
+License:   GPL-3+ 
