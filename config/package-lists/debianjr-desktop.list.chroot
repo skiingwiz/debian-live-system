@@ -3,6 +3,8 @@ xserver-xephyr
 lightdm
 icewm
 zenity
+xterm
+xdg-utils
 junior-doc
 junior-tasks
 thunar
