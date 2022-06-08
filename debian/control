@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Junior <debian-jr@lists.debian.org>
 Uploaders: Stefan Kropp <stefan.kropp@posteo.de>
 Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/debian-jr-team/debian-junior-live-system
 Vcs-Git: https://salsa.debian.org/debian-jr-team/debian-junior-live-system.git
 Homepage: https://salsa.debian.org/debian-jr-team/debian-junior-live-system
@@ -15,5 +15,7 @@ Multi-Arch: foreign
 Depends: ${misc:Depends}
 Suggests: live-build
 Description: Debian Junior live system image
+ Debian Junior is a Debian Pure Blend for children.
+ .
  This package contains the files for live-build to
- build the Debian Junior live system image 
+ build the Debian Junior live system image. 
