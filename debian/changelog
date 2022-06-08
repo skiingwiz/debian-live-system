@@ -1,6 +1,5 @@
-debian-junior-live-system (0.0.1) UNRELEASED; urgency=low
+debian-junior-live-system (0.0.1) experimental; urgency=low
 
-  * Initial release. Closes: #nnnn
-    <nnnn is the bug number of your ITP>
+  * Initial release. Closes: #1012465
 
- -- Stefan Kropp <stefan.kropp@posteo.de>  Sat, 04 Jun 2022 03:51:01 +0200
+ -- Stefan Kropp <stefan.kropp@posteo.de>  Wed, 08 Jun 2022 20:15:39 +0200
