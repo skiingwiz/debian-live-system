@@ -1,29 +1,30 @@
 # This is an example for IceWM's menu definition file.
-
-prog "Debian Jr. Info" ! zenity --info --text "Debian Jr."
-prog "Debian Jr." ! xdg-open ~/README.txt
+#
+prog "Debian Junior" debianjr xdg-open /home/user/README.de.html
+prog Terminal ! x-terminal-emulator -ls
 prog "Web Browser" ! x-www-browser
-prog "Chat" im.dino.Dino dino-im
-
+prog HexChat hexchat hexchat
+prog Gimp gimp gimp
 separator
-menu Applications folder {
-    menu Editors folder {
-        prog "Mousepad" org.xfce.mousepad mousepad
-    }
-    menu "Mail Agents" folder {
-	prog claws-mail claws-mail claws-mail
-    }
-    menu "WWW Browsers" folder {
-        prog "Web Browser" ! x-www-browser
-    }
-    menu "Player" folder {
-        prog "Parole-Medienspieler" org.xfce.parole parole
-        prog "VLC Media Player" vlc icewm-menu-fdo "/usr/share/applications/vlc.desktop"
-    }
-    menu "Kids" folder {
-        prog "GCompris" gcompris-qt gcompris-qt
-    }
-
+#menu Applications folder {
+#    menu Editors folder {
+#        prog fte fte fte
+#        prog vim vim gvim
+#        prog xemacs xemacs xemacs
+#        prog NEdit nedit nedit
+#        prog xedit xedit xedit
+#        prog Lyx emacs lyx
+#    }
+#    menu "Mail Agents" folder {
+#        prog Mutt mutt x-terminal-emulator -e mutt
+#    }
+#    menu "WWW Browsers" folder {
+#        prog "Web Browser" ! x-www-browser
+#        prog Konqueror konqueror konqueror
+#        prog Chromium chromium chromium
+#        prog w3m lynx x-terminal-emulator -e w3m
+#        prog Links2 lynx x-terminal-emulator -e links2
+#    }
 #    menu Graphics folder {
 #        prog Gimp gimp gimp
 #        prog Geeqie geeqie geeqie
@@ -65,7 +66,7 @@ menu Applications folder {
 #        restart fvwm2 - fvwm2
 #        restart fvwm - fvwm
 #    }
-}
+#}
 #menu Utilities folder {
 #    menu Multimedia folder {
 #        prog XPlayCD xplaycd xplaycd
@@ -82,6 +83,6 @@ menu Applications folder {
 #    prog "Screen Saver" xlock xlock -nolock
 #    prog "Screen Lock" xlock xlock
 #}
-#includeprog icewm-menu-fdo --no-sep-others --seps
+includeprog icewm-menu-fdo --no-sep-others --seps
 menuprog Monitors ../devices/computer icewm-menu-xrandr
 menufile Toolbar folder toolbar
