@@ -1,6 +1,6 @@
 # This is an example for IceWM's menu definition file.
 #
-prog "Debian Junior" debianjr xdg-open /home/user/README.de.html
+prog "Debian Junior - Readme" debianjr xdg-open /home/user/README.de.html
 prog Terminal ! x-terminal-emulator -ls
 prog "Web Browser" ! x-www-browser
 prog HexChat hexchat hexchat

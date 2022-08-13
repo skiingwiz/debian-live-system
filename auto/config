@@ -5,5 +5,9 @@ set -e
 lb config noauto \
 	--binary-images iso-hybrid \
 	--cache true \
-	"boot=live components hostname=debianjr username=debianjr" \
+	--bootappend-live \
+	"boot=live components noroot \
+	hostname=debianjr username=user \
+	locales=de_DE.UTF-8,en_US.UTF-8 keyboard-layouts=de,us timezone=Europe/Berlin  \
+	" \
 	"${@}"
