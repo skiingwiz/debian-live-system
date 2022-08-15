@@ -6,7 +6,7 @@ lb config noauto \
 	--binary-images iso-hybrid \
 	--cache true \
 	--bootappend-live \
-	"boot=live components noroot \
+	"boot=live components noroot persistence \
 	hostname=debianjr username=user \
 	locales=de_DE.UTF-8,en_US.UTF-8 keyboard-layouts=de,us timezone=Europe/Berlin  \
 	" \
