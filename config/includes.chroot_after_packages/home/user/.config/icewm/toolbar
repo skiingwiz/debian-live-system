@@ -1,12 +1,12 @@
 # This is a default toolbar definition file for Debian Jr. IceWM
 
-menu A folder {
+menu A blue {
 prog "GCompris" gcompris-qt gcompris-qt
 prog "Kartoffelknülch" ktuberling icewm-menu-fdo "/usr/share/applications/org.kde.ktuberling.desktop"
 prog gamine gamine gamine
 }
 
-menu B folder {
+menu B green {
 prog blobby blobby blobby
 prog blockout2 blockout2 blockout2
 prog frozen-bubble frozen-bubble frozen-bubble
@@ -19,7 +19,7 @@ prog circuslinux circuslinux circuslinux
 prog jumpnbump jumpnbump jumpnbump
 }
 
-menu C folder {
+menu C yellow {
 prog kturtle kturtle kturtle
 prog gnome-sudoku gnome-sudoku gnome-sudoku
 prog 2048-qt 2048-qt 2048-qt
@@ -42,7 +42,7 @@ prog stellarium stellarium stellarium
 prog brainparty brainparty brainparty
 }
 
-menu Tux folder {
+menu Tux red {
 prog pingus pingus pingus
 prog supertux supertux supertux
 prog supertuxkart supertuxkart supertuxkart

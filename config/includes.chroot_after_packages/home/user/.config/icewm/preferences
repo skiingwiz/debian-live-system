@@ -922,10 +922,10 @@ WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
 # ScrollBarY=16 # [0-64]
 
 #  Menu icon size
-# MenuIconSize=16 # [8-128]
+MenuIconSize=32 # [8-128]
 
 #  Dimension of the small icons
-# SmallIconSize=16 # [8-128]
+SmallIconSize=32 # [8-128]
 
 #  Dimension of the large icons
 # LargeIconSize=32 # [8-128]
