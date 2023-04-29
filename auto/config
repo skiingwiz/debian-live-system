@@ -3,8 +3,12 @@
 set -e
 
 lb config noauto \
-	--binary-images iso-hybrid \
+	--binary-image iso-hybrid \
+	--backports true \
 	--cache true \
+	--image-name "debian-junior-beta-live-image" \
+	--distribution bookworm \
+	--hdd-label "DEBIAN_JR_LIVE" \
 	--bootappend-live \
 	"boot=live components noroot persistence \
 	hostname=debianjr username=user \
