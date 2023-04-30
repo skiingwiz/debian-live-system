@@ -6,7 +6,7 @@ lb config noauto \
 	--binary-image iso-hybrid \
 	--backports true \
 	--cache true \
-	--image-name "debian-junior-beta-live-image" \
+	--image-name "debian-junior-live-image-0.1.0-alpha-4" \
 	--distribution bookworm \
 	--hdd-label "DEBIAN_JR_LIVE" \
 	--bootappend-live \

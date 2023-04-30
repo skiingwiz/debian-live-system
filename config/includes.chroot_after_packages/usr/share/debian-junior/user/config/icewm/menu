@@ -1,0 +1,184 @@
+# This is an example for IceWM's menu definition file.
+#
+prog "Debian Junior - Readme" debianjr xdg-open /usr/share/debian-junior/README.de.html
+prog Terminal ! x-terminal-emulator -ls
+prog "Web Browser" ! x-www-browser
+separator
+menu "Audio Video" folder {
+  prog "VLC Media Player" vlc icewm-menu-fdo "/usr/share/applications/vlc.desktop"
+  menu "Mixer" folder {
+    prog "PulseAudio-Lautstärkeregler" multimedia-volume-control pavucontrol
+    prog "PulseAudio Volume Meter (Capture)" audio-input-microphone pavumeter --record
+    prog "PulseAudio Volume Meter (Playback)" audio-input-microphone pavumeter
+  }
+}
+
+menu "Development" folder {
+  prog "Scratch" scratch scratch
+  prog "Squeak" /usr/share/pixmaps/squeak.png squeak
+}
+
+menu "Education" folder {
+  prog "Tux Paint" tuxpaint tuxpaint
+  prog "Stellarium" stellarium icewm-menu-fdo "/usr/share/applications/org.stellarium.Stellarium.desktop"
+  prog "KTurtle" kturtle icewm-menu-fdo "/usr/share/applications/org.kde.kturtle.desktop"
+  prog "Little Wizard" /usr/share/pixmaps/littlewizard/littlewizard-icon.png littlewizard
+  prog "Scratch" scratch scratch
+  prog "GCompris" gcompris-qt gcompris-qt
+  prog "GoldenDict" goldendict goldendict
+  prog "Tux Math " tuxmath tuxmath
+  prog "pySioGame" pysiogame pysiogame
+  prog "Tux Typing" tuxtype tuxtype
+}
+
+menu "Game" folder {
+  prog "2048-Qt" 2048-qt 2048-qt
+  menu "ActionGame" folder {
+    prog "BumpRace" bumprace-icon bumprace
+  }
+  menu "ArcadeGame" folder {
+    prog "Blobby Volley 2" blobby blobby
+    prog "Bloboats" bloboats bloboats
+    prog "Circus Linux!" circuslinux-icon circuslinux --fullscreen
+    prog "Frozen-Bubble" frozen-bubble frozen-bubble
+    prog "Jump 'n Bump" jumpnbump jumpnbump
+    prog "Jump 'n Bump Menu" jumpnbump jumpnbump-menu
+    prog "Nibbles" org.gnome.Nibbles gnome-nibbles
+    prog "Ri-li" ri-li ri-li
+    prog "SuperTux 2" supertux2 supertux2
+    prog "SuperTuxKart" supertuxkart supertuxkart
+  }
+  menu "BlocksGame" folder {
+    prog "BlockOut II" blockout2 blockout2
+    prog "GTetrinet" gtetrinet env GDK_BACKEND=x11 gtetrinet
+  }
+  menu "BoardGame" folder {
+    prog "Mahjongg" org.gnome.Mahjongg gnome-mahjongg
+  }
+  prog "Help Hannah's Horse" hannah hannah
+  menu "KidsGame" folder {
+    prog "Gamine" gamine gamine
+    prog "GCompris" gcompris-qt gcompris-qt
+    prog "Kartoffelknülch" ktuberling icewm-menu-fdo "/usr/share/applications/org.kde.ktuberling.desktop"
+  }
+  prog "LBreakout2" lbreakout2 /usr/games/lbreakout2
+  menu "LogicGame" folder {
+    prog "Atomix" atomix atomix
+    prog "Biniax-2" /usr/share/games/biniax2/graphics/logo.png biniax2
+    prog "Black Box" sgt-blackbox sgt-blackbox
+    prog "Brain Party" brainparty brainparty
+    prog "Bridges" sgt-bridges sgt-bridges
+    prog "Cube" sgt-cube sgt-cube
+    prog "Dominosa" sgt-dominosa sgt-dominosa
+    prog "Fifteen" sgt-fifteen sgt-fifteen
+    prog "Filling" sgt-filling sgt-filling
+    prog "Flip" sgt-flip sgt-flip
+    prog "Flood" sgt-flood sgt-flood
+    prog "Galaxies" sgt-galaxies sgt-galaxies
+    prog "gbrainy" gbrainy gbrainy
+    prog "Guess" sgt-guess sgt-guess
+    prog "Inertia" sgt-inertia sgt-inertia
+    prog "Keen" sgt-keen sgt-keen
+    prog "Laby" laby laby
+    prog "Light Up" sgt-lightup sgt-lightup
+    prog "Loopy" sgt-loopy sgt-loopy
+    prog "Magnets" sgt-magnets sgt-magnets
+    prog "Map" sgt-map sgt-map
+    prog "Mines" sgt-mines sgt-mines
+    prog "Mosaic" sgt-mosaic sgt-mosaic
+    prog "Net" sgt-net sgt-net
+    prog "Netslide" sgt-netslide sgt-netslide
+    prog "Numpty Physics" numptyphysics /usr/games/numptyphysics
+    prog "Palisade" sgt-palisade sgt-palisade
+    prog "Pattern" sgt-pattern sgt-pattern
+    prog "Pearl" sgt-pearl sgt-pearl
+    prog "Pegs" sgt-pegs sgt-pegs
+    prog "Range" sgt-range sgt-range
+    prog "Rectangles" sgt-rect sgt-rect
+    prog "Same Game" sgt-samegame sgt-samegame
+    prog "Signpost" sgt-signpost sgt-signpost
+    prog "Singles" sgt-singles sgt-singles
+    prog "Sixteen" sgt-sixteen sgt-sixteen
+    prog "Slant" sgt-slant sgt-slant
+    prog "Solo" sgt-solo sgt-solo
+  prog "Sudoku" org.gnome.Sudoku gnome-sudoku
+    prog "Tents" sgt-tents sgt-tents
+    prog "Towers" sgt-towers sgt-towers
+    prog "Tracks" sgt-tracks sgt-tracks
+    prog "Twiddle" sgt-twiddle sgt-twiddle
+    prog "Undead" sgt-undead sgt-undead
+    prog "Unequal" sgt-unequal sgt-unequal
+    prog "Unruly" sgt-unruly sgt-unruly
+    prog "Untangle" sgt-untangle sgt-untangle
+  }
+  prog "LTris" /usr/share/games/icons/ltris48.gif ltris
+  prog "pySioGame" pysiogame pysiogame
+  menu "SportsGame" folder {
+    prog "TuxPuck" tuxpuck tuxpuck
+  }
+  menu "StrategyGame" folder {
+    prog "OpenCity" opencity opencity
+    prog "Pingus" pingus-icon pingus
+  }
+ }
+
+menu "Graphics" folder {
+  prog "Bildbetrachter" org.gnome.eog eog
+  prog "LibreOffice Draw" libreoffice-draw icewm-menu-fdo "/usr/share/applications/libreoffice-draw.desktop"
+  prog "Dokumentenbetrachter" org.gnome.Evince evince
+}
+
+menu "Network" folder {
+  prog "Dino" im.dino.Dino dino-im
+  prog "GPX Viewer" gpxviewer gpxviewer
+  prog "Web" org.gnome.Epiphany epiphany
+}
+
+menu "Office" folder {
+  prog "Evolution-E-Mail und -Kalender" evolution evolution
+  prog "LibreOffice Start Center" libreoffice-startcenter libreoffice
+  prog "LibreOffice Base" libreoffice-base icewm-menu-fdo "/usr/share/applications/libreoffice-base.desktop"
+  prog "LibreOffice Writer" libreoffice-writer icewm-menu-fdo "/usr/share/applications/libreoffice-writer.desktop"
+  prog "LibreOffice Draw" libreoffice-draw icewm-menu-fdo "/usr/share/applications/libreoffice-draw.desktop"
+  prog "LibreOffice Math" libreoffice-math icewm-menu-fdo "/usr/share/applications/libreoffice-math.desktop"
+  prog "LibreOffice Impress" libreoffice-impress icewm-menu-fdo "/usr/share/applications/libreoffice-impress.desktop"
+  prog "LibreOffice Calc" libreoffice-calc icewm-menu-fdo "/usr/share/applications/libreoffice-calc.desktop"
+  prog "Dokumentenbetrachter" org.gnome.Evince evince
+  menu "Dictionary" folder {
+    prog "GoldenDict" goldendict goldendict
+    prog "Wörterbuch" org.gnome.Dictionary gnome-dictionary
+  }
+}
+menu "Science" folder {
+prog "Stellarium" stellarium icewm-menu-fdo "/usr/share/applications/org.stellarium.Stellarium.desktop"
+}
+menu "Settings" folder {
+menu "DesktopSettings" folder {
+prog "Dateiverwaltung Einstellungen" org.xfce.thunar thunar-settings
+prog "Textbearbeitungs-Einstellungen" org.xfce.mousepad mousepad --preferences
+prog "Wechseldatenträger- und Medieneinstellungen" org.xfce.volman thunar-volman-settings
+prog "XScreenSaver Settings" xscreensaver xscreensaver-settings
+}
+prog "KDE-Systemeinstellungen" preferences-system systemsettings5
+prog "PulseAudio-Einstellungen" preferences-desktop paprefs
+prog "PulseAudio-Lautstärkeregler" multimedia-volume-control pavucontrol
+prog "Tux Paint Config." tuxpaint-config tuxpaint-config
+}
+menu "System" folder {
+prog "Thunar-Dateiverwaltung" org.xfce.thunar thunar
+prog "UXTerm" mini.xterm uxterm
+prog "XTerm" mini.xterm xterm
+}
+
+menu "Utility" folder {
+prog "Taschenrechner" org.gnome.Calculator gnome-calculator
+prog "GNOME Clocks" org.gnome.clocks gnome-clocks
+prog "Massenumbenennen" org.xfce.thunar icewm-menu-fdo "/usr/share/applications/thunar-bulk-rename.desktop"
+prog "grun" /usr/share/pixmaps/grun2.xpm grun
+prog "Mousepad" org.xfce.mousepad mousepad
+}
+
+separator
+#includeprog icewm-menu-fdo --no-sep-others --seps
+menuprog Monitors ../devices/computer icewm-menu-xrandr
+menufile Toolbar folder toolbar
