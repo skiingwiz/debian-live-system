@@ -3,15 +3,16 @@
 set -e
 
 lb config noauto \
-	--binary-image iso-hybrid \
-	--backports true \
-	--cache true \
-	--image-name "debian-junior-live-image-0.1.0-alpha-4" \
-	--distribution bookworm \
-	--hdd-label "DEBIAN_JR_LIVE" \
-	--bootappend-live \
-	"boot=live components noroot persistence \
-	hostname=debianjr username=user \
-	locales=de_DE.UTF-8,en_US.UTF-8 keyboard-layouts=de,us timezone=Europe/Berlin  \
-	" \
-	"${@}"
+    --binary-image iso-hybrid \
+    --backports true \
+    --cache true \
+    --image-name "debian-live-${DISTRIBUTION}-${LIVE_VERSION}" \
+    --distribution ${DISTRIBUTION} \
+    --hdd-label "DEBIAN_LIVE" \
+    --archive-areas "main contrib non-free non-free-firmware" \
+    --bootappend-live \
+    "boot=live components persistence \
+    hostname=debian username=user \
+    locales=en_US.UTF-8 keyboard-layouts=us timezone=America/New_York  \
+    " \
+    "${@}"

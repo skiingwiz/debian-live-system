@@ -1,23 +1,5 @@
 #!/bin/bash
 
-# This bash script is for Debian Junior.
-
-function setup_icewm() {
-  mkdir -p ${HOME}/.config/icewm
-  ln -s /usr/share/debian-junior/user/config/icewm/keys ${HOME}/.config/icewm/keys
-  ln -s /usr/share/debian-junior/user/config/icewm/menu ${HOME}/.config/icewm/menu
-  ln -s /usr/share/debian-junior/user/config/icewm/preferences ${HOME}/.config/icewm/preferences
-  ln -s /usr/share/debian-junior/user/config/icewm/theme ${HOME}/.config/icewm/theme
-  ln -s /usr/share/debian-junior/user/config/icewm/toolbar ${HOME}/.config/icewm/toolbar
-  ln -s /usr/share/debian-junior/user/config/icewm/icons ${HOME}/.config/icewm/icons
-  icewm -r
-}
-
-
-if [ -e ${HOME}/.setup-debian-jr ] ; then
-  if [ ! -e ${HOME}/.config/debian-jr ] ; then
-    echo "Going to setup Debian Junior for ${USER} ..."
-    mkdir -p ${HOME}/.config/debian-jr
-    setup_icewm
-  fi
+if [[ -f ~/.alias.sh ]]; then
+  source ~/.alias.sh
 fi

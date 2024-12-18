@@ -1,0 +1,18 @@
+version: "3.6"
+
+networks:
+  default:
+
+services:
+  lb-build:
+    image: debian:bookworm
+    command: [ "/working/run.sh"]
+    privileged: true
+    volumes:
+      - ./debian.sources:/etc/apt/sources.list.d/debian.sources
+      - .:/working:rw
+    working_dir: /working
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      - IN_DOCKER=yes

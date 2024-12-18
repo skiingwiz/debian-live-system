@@ -1,35 +1,20 @@
 # Debian Junior Live System
 
-Debian Junior Live System
+This is based on the Debian Junior Live System:
+https://salsa.debian.org/debian-jr-team/debian-junior-live-system.git
 
-This repository is based on the Debian Live System:
-
+Which is itself based on the Debian Live System:
 https://live-team.pages.debian.net/live-manual/html/live-manual/managing-a-configuration.en.html
-
-The auto script has been created via:
-
-```
-cp /usr/share/doc/live-build/examples/auto/* auto/
-```
 
 ## Build
 
-Build your own Debian Jr. Live System:
+Docker and docker-compose are pre-requisites. From ther just execute run.sh
 
- * apt-get install live-build
- * git clone https://salsa.debian.org/debian-jr-team/debian-junior-live-system.git
- * cd debian-junior-live-system/
- * lb config
- * sudo lb build
+Take the iso build and write it to a USB:
+sudo dd if=./debian-live-bookworm-20240310-1312-amd64.hybrid.iso of=/dev/sdb bs=16M oflag=direct status=progress
 
-Run ISO with qemu:
+## Customization
 
- * kvm -m 2G -cdrom live-image-amd64.hybrid.iso
+Packages to be installed can be added to a list in config/package-lists/ or a new list can be put there
 
-## Contact
-
-Development and support:
-
- * Mailing list: The primary contact for the project is the mailing list at https://lists.debian.org/debian-jr/
- * XMPP/Jabber chat: xmpp:debian-jr@conference.debian.org?join
-
+Files to be put into the auto-login user's home area can be added to config/includes.chroot_after_packages/home/user/
